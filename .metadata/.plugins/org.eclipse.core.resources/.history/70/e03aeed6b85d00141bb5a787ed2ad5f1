@@ -1,0 +1,15 @@
+package T4;
+
+public class Car {
+	class Wheel{
+		
+	}
+	
+}
+
+class PlaneWheel extends Car.Wheel{
+	public static void main(String[] args){
+		Car ca = new Car();
+		PlaneWheel pw = ca.new PlaneWheel();
+	}
+}

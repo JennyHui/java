@@ -1,0 +1,12 @@
+package T4;
+
+public class Blah {
+	
+	public void FN1(){
+		
+	}
+
+	abstract void class B{
+		
+	}
+}

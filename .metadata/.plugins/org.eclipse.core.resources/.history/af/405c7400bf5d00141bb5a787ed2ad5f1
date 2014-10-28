@@ -1,0 +1,18 @@
+package T4;
+
+public class Blah {
+	
+	void FN1(){
+		
+	}
+}
+
+abstract class B{
+	abstract void FN2();
+}
+
+class C extends Blah{
+	B getB(){
+		return new B();
+	}
+}

@@ -1,0 +1,35 @@
+package T4;
+
+public class Blah {
+	
+	void FN1(){
+		
+	}
+}
+
+abstract class B{
+	abstract void FN2();
+}
+
+class C extends Blah{
+	B getB(){
+		return new B(){
+			public void FN2(){
+				System.out.println("OUT!");
+			}
+		};
+	}
+}
+
+class TestC{
+	static void method1(Blah a){
+		a.FN1();
+	}
+	static void method2(B b){
+		b.FN2();
+	}
+	public static void main(String[] args){
+		C cc = new C();
+		cc.getB();
+	}
+}

@@ -1,0 +1,29 @@
+package T4;
+
+public interface Animal {
+	
+	void eat();
+	void sleep();
+	class Zoo{
+		class Tiger implements Animal{
+			public void eat(){
+				System.out.println("The Tiger is eating");
+			} 
+			public void sleep(){
+				System.out.println("The Tiger is sleeping");
+			}
+		}
+	}
+	
+	Animal getAnimal(){
+		return new Zoo();
+	}
+
+}
+
+class Test{
+	public static void main(String[] args){
+		Animal an;
+		
+	}
+}

@@ -1,0 +1,13 @@
+package T4;
+
+public interface Animal {
+	
+	void eat(){};
+	void sleep(){};
+	class Zoo{
+		class Tiger implantemt Animal{
+			void 
+		}
+	}
+
+}

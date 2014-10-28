@@ -1,0 +1,16 @@
+package T4;
+
+public class Blah {
+	
+	public void FN1(){
+		
+	}
+}
+
+abstract class B{
+	abstract void FN2();
+}
+
+class C extends Blah{
+	
+}

@@ -1,0 +1,33 @@
+package T4;
+
+public class Outer {
+	
+	private int index=50;
+	//Inner为内部类
+	class Inner{
+		private int index=100;
+
+		void print(){
+			int index=20;
+			System.out.println(index);
+			System.out.println(this.index);
+			System.out.println(Outer.this.index);
+		}
+	}
+
+	void print(){
+		Inner in=new Inner();
+		in.print();
+	}
+	
+	Inner getInner(){
+		return new Inner();
+	}
+}
+
+class Test{
+	public static void main(String[] args){
+		Outer ou = new Outer();
+		ou.print();
+	}
+}
