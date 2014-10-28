@@ -1,0 +1,51 @@
+package T5;
+
+public class Except {
+	
+	public int div(int a,int b) throws Exception,JennysException //throws Exception
+	{
+		//return a/b;
+		/*try{
+			return a/b;
+			}
+		catch (Exception e){
+			//e.printStackTrace();
+			System.out.println(e.toString());
+			throw e;
+			//return 1;
+			}*/
+			if (b<0) throw new JennysException("Blah");
+			return a/b;
+		}
+	
+	public int fn1(int a,int b) throws Exception,JennysException{
+		return div(a,b);
+		
+	}
+}
+
+class JennysException extends Exception{
+	JennysException(String str){
+		super(str);
+	}
+}
+class ExceptTest{
+	public static void main(String[] args) throws Exception,JennysException{
+		Except ex = new Except();
+		//ex.fn1(10,0);
+		try{
+			ex.fn1(10,0);
+		}
+		catch (Exception e){
+			System.out.println(e.toString());
+			//e.printStackTrace();
+		}
+		/*catch (Exception e){
+			System.out.println(e.toString());
+		}*/
+		finally{
+			System.out.println("Finally!");
+			}
+		System.out.println("Fish!");
+	}
+}
